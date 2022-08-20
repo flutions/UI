@@ -170,6 +170,9 @@ body {
     .banner_right {
       width: 80% !important;
     }
+    .banner_right {
+      text-align: center !important;
+    }
     h1 {
       font-size: 2rem !important;
       line-height: 2rem !important;
@@ -201,6 +204,7 @@ body {
     flex-direction: column;
     .development_left {
       width: 100% !important;
+      text-align: center !important;
     }
     .development_right {
       width: 100% !important;
@@ -227,12 +231,14 @@ body {
     }
     .technical_right {
       width: 100% !important;
+      text-align: center !important;
     }
   }
   .consulting {
     flex-direction: column;
     .consulting_left {
       width: 100% !important;
+      text-align: center !important;
     }
     .consulting_right {
       width: 100% !important;
@@ -330,7 +336,7 @@ body {
       width: 40px !important;
     }
     p {
-      font-size: 0.8px !important;
+      font-size: 0.8rem !important;
     }
     svg {
       width: 15px !important;
