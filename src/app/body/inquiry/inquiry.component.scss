@@ -1,0 +1,62 @@
+.inquiry {
+  width: 80%;
+  margin: 10vh auto;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 600px;
+  background-image: url("../../../assets/Images/Send\ Enquiry.png");
+  .inquiry_left {
+    width: 52%;
+    h1 {
+      width: 80%;
+      font-size: 4.2rem;
+      line-height: 4.2rem;
+      margin: auto;
+      color: #fff;
+    }
+  }
+  .inquiry_right {
+    width: 48%;
+    text-align: center;
+    color: #fff;
+    h2 {
+      font-size: 2rem;
+    }
+    form {
+      width: 70%;
+      margin: auto;
+      mat-form-field {
+        width: 100%;
+        color: #fff;
+        // height: 30px;
+      }
+      ::ng-deep {
+        .mat-form-field-appearance-outline .mat-form-field-outline {
+          color: #7a7c9c;
+        }
+        mat-form-field {
+          .mat-hint,
+          input,
+          ::placeholder,
+          .mat-form-field-label {
+            color: #7a7c9c;
+          }
+        }
+      }
+      button {
+        width: 100%;
+        padding: 10px;
+        border-radius: 25px;
+        background-color: #fcd980;
+        color: #7a7c9c;
+        border: none;
+        font-size: 1.5rem;
+        margin: 10px auto;
+        outline: none;
+        cursor: pointer;
+      }
+    }
+  }
+}

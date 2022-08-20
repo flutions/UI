@@ -1,0 +1,64 @@
+.process {
+  background-color: #fff;
+  width: 80%;
+  padding: 10vh 10%;
+  .process_top {
+    display: flex;
+    justify-content: space-between;
+    .pt_left {
+      width: 55%;
+      .head_top {
+        font-size: 1.5rem;
+        color: #39393b;
+      }
+      h1 {
+        font-size: 3.5rem;
+        line-height: 3.5rem;
+      }
+    }
+    .pt_right {
+      text-align: right;
+    }
+  }
+  .process_bottom {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    .process_card {
+      width: 30%;
+      margin: 5% auto 0;
+      border-width: 5px;
+      border-style: solid;
+      border-image: linear-gradient(to right, #00257d, #15afeb) 100% 0 0 0;
+      position: relative;
+      .card_content {
+        display: flex;
+        width: 79.5%;
+        border: 1px solid #2b2d3d6c;
+        padding: 10%;
+        img {
+          height: fit-content;
+          margin: 0 10px 0 0;
+        }
+        .card_content_text {
+          h4 {
+            margin: -5px 0 5px 0;
+            font-weight: 700;
+          }
+          p {
+            color: #7f808c;
+          }
+        }
+      }
+      .card_progress {
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        h1 {
+          color: #d0d1d985;
+        }
+      }
+    }
+  }
+}

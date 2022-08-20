@@ -8,6 +8,16 @@ import { FooterComponent } from './footer/footer.component';
 import { BodyComponent } from './body/body.component';
 import { BannerComponent } from './body/banner/banner.component';
 import { ProcessComponent } from './body/process/process.component';
+import { DevelopmentComponent } from './body/development/development.component';
+import { TechnicalComponent } from './body/technical/technical.component';
+import { ConsultingComponent } from './body/consulting/consulting.component';
+import { ExpertiseComponent } from './body/expertise/expertise.component';
+import { InquiryComponent } from './body/inquiry/inquiry.component';
+import { TeamComponent } from './body/team/team.component';
+import { HomeContactComponent } from './body/home-contact/home-contact.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatFormFieldModule, MAT_FORM_FIELD } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input'
 
 @NgModule({
   declarations: [
@@ -16,13 +26,25 @@ import { ProcessComponent } from './body/process/process.component';
     FooterComponent,
     BodyComponent,
     BannerComponent,
-    ProcessComponent
+    ProcessComponent,
+    DevelopmentComponent,
+    TechnicalComponent,
+    ConsultingComponent,
+    ExpertiseComponent,
+    InquiryComponent,
+    TeamComponent,
+    HomeContactComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatFormFieldModule,
+    MatInputModule
   ],
-  providers: [],
+  providers: [
+
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

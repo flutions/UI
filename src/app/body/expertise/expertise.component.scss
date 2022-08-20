@@ -1,0 +1,56 @@
+.expertise {
+  width: 80%;
+  padding: 10vh 10%;
+  background-color: #ecf8f9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .ex_left {
+    width: 50%;
+    .ex_top {
+      font-size: 1rem;
+      line-height: 1rem;
+      margin: 0 auto 3% auto;
+      font-weight: 600;
+    }
+    .ex_desc {
+      font-size: 3.5rem;
+      line-height: 3.5rem;
+      font-weight: 700;
+    }
+  }
+  .ex_right {
+    width: 40%;
+    .ex_card {
+      width: 100%;
+      margin: 10px 0;
+      background-color: #fff;
+      border-width: 5px;
+      border-style: solid;
+      border-image: linear-gradient(to right, #00257d, #15afeb) 100% 1 0 1;
+      .card_content {
+        display: flex;
+        width: 80%;
+        margin: 30px auto;
+        .card_img {
+          height: fit-content;
+          padding: 5px 10px;
+          background-color: #f5fbfc;
+          border-radius: 25px;
+        }
+        .card_text {
+          width: 80%;
+          margin: 0 10px;
+          h5 {
+            font-weight: 700;
+            margin-bottom: 10px;
+          }
+          p {
+            font-weight: 700;
+            color: #7b7d88;
+          }
+        }
+      }
+    }
+  }
+}

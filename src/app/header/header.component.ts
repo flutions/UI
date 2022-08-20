@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
   currentTab = "home";
+  viewTab = false;
   constructor() { }
 
   ngOnInit(): void {

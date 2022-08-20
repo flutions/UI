@@ -1,13 +1,37 @@
 <div class="header">
-    <div class="header_logo">
-        <img src="assets/Images/Flution-v1.png" alt="">
-    </div>
-    <div class="header_tab">
-        <ul class="tabs">
-            <li (click)="currentTab = 'home'" [classList]="currentTab == 'home' ? 'active tab' : 'tab'">Home</li>
-            <li (click)="currentTab = 'service'" [classList]="currentTab == 'service' ? 'active tab' : 'tab'">Service</li>
-            <li (click)="currentTab = 'contact'" [classList]="currentTab == 'contact' ? 'active tab' : 'tab'">Contact Us</li>
-        </ul>
-        <a href="#">Request Quote</a>
-    </div>
+  <!-- <div class="header_logo">
+    <img src="assets/Images/Logo.png" alt="" />
+</div> -->
+  <div class="header_tab">
+    <img src="assets/Images/Logo.png" class="logo" alt="" />
+    <input class="menu-btn" type="checkbox" id="menu-btn" />
+    <label class="menu-icon" for="menu-btn"
+      ><span class="navicon"></span
+    ></label>
+    <ul class="menu">
+      <li
+        (click)="currentTab = 'home'"
+        [classList]="currentTab == 'home' ? 'active tab' : 'tab'"
+      >
+        <a> Home </a>
+      </li>
+      <li
+        (click)="currentTab = 'service'"
+        [classList]="currentTab == 'service' ? 'active tab' : 'tab'"
+      >
+        <a> Service </a>
+      </li>
+      <li
+        (click)="currentTab = 'contact'"
+        [classList]="currentTab == 'contact' ? 'active tab' : 'tab'"
+      >
+        <a> Contact Us </a>
+      </li>
+      <li>
+        <a class="request"
+          >Request Quote <img src="assets/Images/Left arrow Icon.png" alt=""
+        /></a>
+      </li>
+    </ul>
+  </div>
 </div>

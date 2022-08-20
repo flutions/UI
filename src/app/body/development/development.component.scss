@@ -1,0 +1,28 @@
+.development {
+  width: 80%;
+  padding: 10vh 10%;
+  background-color: #ebf8fd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .development_left {
+    width: 50%;
+    img {
+      width: 80%;
+    }
+  }
+  .development_right {
+    width: 50%;
+    .dev_head {
+      font-size: 2rem;
+      line-height: 2rem;
+      margin: 0 auto 3% auto;
+      font-weight: 600;
+    }
+    .dev_desc {
+      font-size: 2.5rem;
+      line-height: 2.5rem;
+      font-weight: 700;
+    }
+  }
+}

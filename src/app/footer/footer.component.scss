@@ -1,0 +1,31 @@
+.footer {
+  width: 80%;
+  padding: 0 10%;
+  background-color: #1c1e53;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .footer_left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    img {
+      width: 75px;
+    }
+    p {
+      font-size: 1.2rem;
+      color: #fff;
+      margin: 0;
+    }
+  }
+  .footer_right {
+    a {
+      margin: auto 5px;
+      cursor: pointer;
+      svg {
+        fill: #fff;
+        width: 25px;
+      }
+    }
+  }
+}

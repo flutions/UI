@@ -1,0 +1,28 @@
+.technical {
+  width: 80%;
+  padding: 10vh 10%;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .technical_left {
+    width: 50%;
+    .tech_head {
+      font-size: 2rem;
+      line-height: 2rem;
+      margin: 0 auto 3% auto;
+      font-weight: 600;
+    }
+    .tech_desc {
+      font-size: 2.5rem;
+      line-height: 2.5rem;
+      font-weight: 700;
+    }
+  }
+  .technical_right {
+    width: 50%;
+    img {
+      width: 80%;
+    }
+  }
+}
