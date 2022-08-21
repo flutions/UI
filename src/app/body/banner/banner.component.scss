@@ -27,10 +27,12 @@
   }
   .banner_right {
     width: 50%;
+    height: 100%;
     margin: auto;
     text-align: right;
     img {
-      width: 80%;
+      // width: 80%;
+      height: 100%;
       margin: auto;
     }
   }

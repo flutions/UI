@@ -141,7 +141,7 @@ body {
 
 /* 48em = 768px */
 
-@media (min-width: 48em) {
+@media (min-width: 999px) {
   .header_tab li {
     float: left;
   }
@@ -158,6 +158,14 @@ body {
   }
 }
 
+@media (max-width: 999px) {
+  .tab {
+    &.active {
+      border-top: none !important;
+      border-left: 5px solid #00a5e6;
+    }
+  }
+}
 // Responsive
 @media (max-width: 768px) {
   body {
@@ -170,12 +178,7 @@ body {
       width: 100% !important;
     }
   }
-  .tab {
-    &.active {
-      border-top: none !important;
-      border-left: 5px solid #00a5e6;
-    }
-  }
+
   .banner_section {
     flex-direction: column-reverse;
     text-align: center;
@@ -187,7 +190,9 @@ body {
     }
     .banner_right {
       width: 100% !important;
+      height: unset !important;
       img {
+        height: unset !important;
         width: 100% !important;
       }
     }
