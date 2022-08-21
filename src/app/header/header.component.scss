@@ -17,6 +17,7 @@
   .header_tab {
     // height: 100%;
     width: 80%;
+    height: 10vh;
     .menu {
       list-style: none;
       height: 100%;
@@ -29,15 +30,14 @@
         cursor: pointer;
         &.active {
           color: #e3e3e5;
-          border-top: 5px solid #00a5e6;
+          border-top: 2px solid #00a5e6;
         }
       }
       a {
         display: flex;
         text-decoration: none;
-        margin-top: 5px;
         &.request {
-          margin-top: 10px;
+          margin-top: 5px;
           color: #0493cd;
         }
         img {
