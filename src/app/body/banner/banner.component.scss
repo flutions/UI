@@ -31,10 +31,14 @@
     height: 100%;
     margin: auto;
     text-align: right;
+    display: flex;
+    align-items: center;
+    justify-content: end;
     img {
       width: auto;
       max-height: 100%;
-      margin: auto;
+      max-width: 80%;
+      // margin: auto;
     }
   }
 }

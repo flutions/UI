@@ -18,24 +18,15 @@
     // height: 100%;
     width: 80%;
     height: 10vh;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     .menu {
       list-style: none;
       height: 100%;
       // width: 100%;
       background-color: #232536;
-      li {
-        height: 100%;
-        display: flex;
-        align-items: center;
-      }
       .tab {
         color: #8e8f98;
-        border-top: 2px solid #232536;
+        border-top: 5px solid #232536;
         padding: 0;
-
         cursor: pointer;
         &.active {
           color: #e3e3e5;
