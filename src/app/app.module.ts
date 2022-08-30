@@ -18,6 +18,9 @@ import { HomeContactComponent } from './body/home-contact/home-contact.component
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatFormFieldModule, MAT_FORM_FIELD } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input'
+import { RouterModule } from '@angular/router';
+import { ServicesComponent } from './services/services.component';
+import { ContactusComponent } from './contactus/contactus.component';
 
 @NgModule({
   declarations: [
@@ -33,14 +36,23 @@ import { MatInputModule } from '@angular/material/input'
     ExpertiseComponent,
     InquiryComponent,
     TeamComponent,
-    HomeContactComponent
+    HomeContactComponent,
+    ServicesComponent,
+    ContactusComponent,
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    RouterModule.forRoot([
+      {path: '', redirectTo:"/home",pathMatch:'full'},
+      {path:'home',component: BodyComponent},
+      {path:'services',component: ServicesComponent},
+      {path:'contactus',component: ContactusComponent},
+    ])
   ],
   providers: [
 

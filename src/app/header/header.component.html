@@ -11,19 +11,21 @@
     <ul class="menu">
       <li
         (click)="currentTab = 'home'"
+        [routerLink]="['/home']"
         [classList]="currentTab == 'home' ? 'active tab' : 'tab'"
       >
         <a> Home </a>
       </li>
       <li
-        (click)="currentTab = 'service'"
-        [classList]="currentTab == 'service' ? 'active tab' : 'tab'"
+        [routerLink]="['/services']"
+        [classList]="currentTab == 'services' ? 'active tab' : 'tab'"
       >
         <a> Service </a>
       </li>
       <li
         (click)="currentTab = 'contact'"
-        [classList]="currentTab == 'contact' ? 'active tab' : 'tab'"
+        [routerLink]="['/contactus']"
+        [classList]="currentTab == 'contactus' ? 'active tab' : 'tab'"
       >
         <a> Contact Us </a>
       </li>
