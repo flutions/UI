@@ -1,0 +1,20 @@
+.service {
+  text-align: center;
+  margin: 5rem auto;
+  h1 {
+    position: relative;
+    text-align: center;
+    font-size: 3.5rem;
+    color: #c4c4c6;
+    &::after {
+      content: "";
+      bottom: -10px;
+      left: 42.5%;
+      position: absolute;
+      width: 15%;
+      height: 15%;
+      background-color: #5160ff;
+      border-radius: 25px;
+    }
+  }
+}

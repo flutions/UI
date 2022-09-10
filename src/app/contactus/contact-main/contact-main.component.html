@@ -1,0 +1,65 @@
+<div class="main">
+  <div class="main_contact">
+    <div class="mobile">
+      <h1>Our Office</h1>
+      <p>Phonw <a href="tel:+917358559990">(+91) 7358 559990</a></p>
+    </div>
+    <div class="office">
+      <h3>Address</h3>
+      <p>Currently we are working on cloud</p>
+    </div>
+    <div class="mail">
+      <h3>Email</h3>
+      <a href="mailto:info@flutions.in">Info@flutions.in</a>
+      <div class="social_media">
+        <img src="assets/Images/facebook.png" alt="" />
+        <img src="assets/Images/twitter.png" alt="" />
+        <img src="assets/Images/insta.png" alt="" />
+        <img src="assets/Images/linkedin.png" alt="" />
+      </div>
+    </div>
+  </div>
+  <h1 class="heading">We'd love to hear from you!</h1>
+  <div class="contact">
+    <form [formGroup]="contactForm">
+      <mat-form-field appearance="outline">
+        <mat-label>Enter Your Name</mat-label>
+        <input
+          type="text"
+          matInput
+          placeholder="Ex. Khizer Hussain"
+          formControlName="name"
+          required
+        />
+        <mat-error *ngIf="true"> Please enter a your name </mat-error>
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Enter Your Email</mat-label>
+        <input
+          type="email"
+          matInput
+          placeholder="Ex. info@flutions.in"
+          formControlName="email"
+          required
+        />
+        <mat-error *ngIf="true"> Please enter a valid E-Mail </mat-error>
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Write Your Questions Heree</mat-label>
+        <textarea
+          type="text"
+          matInput
+          formControlName="msg"
+          required
+        ></textarea>
+        <mat-error *ngIf="true"> Please enter something </mat-error>
+      </mat-form-field>
+    </form>
+    <input
+      type="button"
+      class="submit_btn"
+      value="Send Message"
+      (click)="sendMail()"
+    />
+  </div>
+</div>

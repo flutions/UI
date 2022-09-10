@@ -1,0 +1,57 @@
+.work {
+  width: 100%;
+  .heading {
+    position: relative;
+    text-align: center;
+    font-size: 3.5rem;
+    color: #c4c4c6;
+    &::after {
+      content: "";
+      bottom: -10px;
+      left: 42.5%;
+      position: absolute;
+      width: 15%;
+      height: 15%;
+      background-color: #5160ff;
+      border-radius: 25px;
+    }
+  }
+  .work_content {
+    width: 50%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+    background-color: #161b2a;
+    border-radius: 5px;
+    padding: 5% 10%;
+    color: #fff;
+    .w_left {
+      width: 30%;
+      h1 {
+        margin: 20px auto;
+      }
+      p {
+        color: #a2a4aa;
+      }
+    }
+    .w_right {
+      width: 60%;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      .work_card {
+        width: 47%;
+        margin: 15px auto;
+        img {
+          width: 50px;
+        }
+        h2 {
+          margin: 10px 0;
+        }
+        p {
+          color: #a2a4aa;
+        }
+      }
+    }
+  }
+}

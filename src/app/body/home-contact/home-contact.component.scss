@@ -1,7 +1,7 @@
 .contact {
   width: 80%;
   padding: 10vh 10%;
-  background-color: #fff;
+  background-color: #161616;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -16,6 +16,7 @@
       h1 {
         font-size: 3rem;
         line-height: 3rem;
+        color: #fff;
       }
     }
     .cl_middle {
@@ -23,12 +24,13 @@
         font-weight: 600;
         font-size: 1.5rem;
         line-height: 1.5rem;
+        color: #fff;
       }
     }
     .cl_bottom {
       a {
         text-decoration: none;
-        color: #7d7f88;
+        color: #fff;
         display: block;
         margin: 10px 0;
       }
@@ -49,11 +51,11 @@
         width: 30%;
         text-align: left;
         font-size: 1rem;
-        line-height: 1rem;
+        line-height: 2rem;
         p {
           margin: 3px 0;
           font-weight: 700;
-          color: #323444;
+          color: #fff;
         }
         ul {
           list-style: none;
@@ -61,7 +63,7 @@
             font-weight: 600;
             margin: 3px 0;
             list-style: none;
-            color: #7d7f88;
+            color: #fff;
           }
         }
       }

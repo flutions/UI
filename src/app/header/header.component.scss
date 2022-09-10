@@ -2,8 +2,9 @@
   width: 80%;
   padding: 0 10%;
   position: fixed;
-  border-bottom: 1px solid #2b2d3d;
-  height: 10vh;
+  // border-bottom: 1px solid #2b2d3d;
+  top: 1rem;
+  // height: 10vh;
   background-color: #232536;
   z-index: 1000;
   .header_logo {
@@ -17,12 +18,15 @@
   .header_tab {
     // height: 100%;
     width: 80%;
-    height: 10vh;
+    border-radius: 10px;
+    // height: 10vh;
+    background-color: inherit;
     .menu {
       list-style: none;
       height: 100%;
       // width: 100%;
       background-color: #232536;
+      border-radius: 0 10px 10px 10px;
       .tab {
         color: #8e8f98;
         border-top: 2px solid #232536;
