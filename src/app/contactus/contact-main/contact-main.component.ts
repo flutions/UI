@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, FormControl } from '@angular/forms';
+import { ApiService } from 'src/app/api.service';
 
 @Component({
   selector: 'app-contact-main',
@@ -7,7 +8,7 @@ import { FormBuilder, FormGroup, FormControl } from '@angular/forms';
   styleUrls: ['./contact-main.component.scss'],
 })
 export class ContactMainComponent implements OnInit {
-  constructor(private fb: FormBuilder) {}
+  constructor(private fb: FormBuilder, private api: ApiService) {}
   public contactForm = this.fb.group({
     name: '',
     email: '',
@@ -15,6 +16,8 @@ export class ContactMainComponent implements OnInit {
   });
   ngOnInit(): void {}
   sendMail() {
-    console.log(this.contactForm);
+    this.api.contactus(this.contactForm.value).subscribe((data: any) => {
+      console.log('response', data);
+    });
   }
 }

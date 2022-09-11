@@ -6,9 +6,10 @@
         type="email"
         placeholder="Enter Your Email"
         name="request"
+        #email
         id="request"
       />
-      <button>Request Quote</button>
+      <button (click)="submit(email.value)">Request Quote</button>
     </div>
   </div>
 </div>

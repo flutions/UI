@@ -31,6 +31,7 @@ import { ServiceFaqComponent } from './services/service-faq/service-faq.componen
 import { MatIconModule } from '@angular/material/icon';
 import { ContactBannerComponent } from './contactus/contact-banner/contact-banner.component';
 import { ContactMainComponent } from './contactus/contact-main/contact-main.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -59,6 +60,7 @@ import { ContactMainComponent } from './contactus/contact-main/contact-main.comp
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
     MatFormFieldModule,
@@ -71,7 +73,7 @@ import { ContactMainComponent } from './contactus/contact-main/contact-main.comp
       { path: 'contactus', component: ContactusComponent },
     ]),
   ],
-  providers: [],
+  providers: [HttpClientModule],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
