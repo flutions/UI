@@ -11,6 +11,11 @@ export class HeaderComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    // console.log(window.location.pathname.split("/")[1]);
+    
+  }
+  ngDoCheck(): void{
+    this.currentTab = window.location.pathname.split("/")[1]
   }
 
 }
