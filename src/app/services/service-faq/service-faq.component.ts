@@ -23,11 +23,19 @@ export class ServiceFaqComponent implements OnInit {
   contactFaq = [
     {
       q: 'How can we communicate?',
-      a: 'Please update your details in this page. We will reach you out through email or phone.',
+      a: 'Please fill your details on the page. We will reach you via email or phone.',
+    },
+    {
+      q:'Where are you located?',
+      a:'Chennai, India.',
+    },
+    {
+     q:'What all Services you provide?',                            
+     a:'Web App Development, Mobile App Development (Android &amp; iOS), Quality Assurance, Cloud Services, Block Chain, Artificial Intelligence (AI), Machine Learning',
     },
     {
       q: 'How do you communicate?',
-      a: 'Please update your details in this page. We will reach you out through email or phone.',
+      a: 'Please update your details in this page. We will reach you via email or phone.',
     },
   ];
   ngOnInit(): void {

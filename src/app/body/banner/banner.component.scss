@@ -8,45 +8,48 @@
   .banner_left {
     width: 50%;
     text-align: center;
-    margin: 10rem auto;
+    margin: 10em auto;
     h1 {
-      font-size: 4rem;
-      line-height: 4rem;
+      font-size: 4em;
+      // line-height: 4em;
       color: #fff;
       span {
         color: #3f7ecc;
       }
     }
     .form {
-      width: 100%;
+      width: 80%;
       display: flex;
       justify-content: center;
       background-color: #fff;
       border-radius: 15px;
       align-items: center;
       padding: 10px 10px 10px 30px;
-      margin: 5rem auto;
+      margin: 5em auto;
       input {
         width: 70%;
         background-color: transparent;
         border: none;
-        font-size: 1.2rem;
+        font-size: 1em;
         outline: none;
       }
       button {
-        padding: 15px 30px;
+        padding: 1.5em;
         cursor: pointer;
-        width: 25%;
+        width: 30%;
         background: #00a5e6;
         border: none;
         outline: none;
         color: #fff;
-        font-size: 1rem;
-        line-height: 1rem;
+        font-size: 1em;
+        line-height: 1em;
         border-radius: 10px;
+        font-weight: 700;
       }
     }
   }
+  
+  
   // .banner_right {
   //   width: 50%;
   //   max-height: 100%;
