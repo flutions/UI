@@ -1,13 +1,22 @@
 .team {
   width: 80%;
   padding: 10vh 10%;
-  background-color: #f4f6fc;
   .team_heading {
+    position: relative;
     text-align: center;
     font-size: 3.5rem;
-    line-height: 3.5rem;
-    color: #282938;
+    color: #c4c4c6;
     margin: 20px auto;
+    &::after {
+      content: "";
+      bottom: -10px;
+      left: 42.5%;
+      position: absolute;
+      width: 15%;
+      height: 15%;
+      background-color: #5160ff;
+      border-radius: 25px;
+    }
   }
   .team_cards {
     display: flex;
@@ -15,22 +24,22 @@
     flex-wrap: wrap;
     .card {
       padding: 5% 15px;
-      background-color: #fff;
       text-align: center;
       border-radius: 5px;
       width: 20%;
       img {
         border-radius: 50%;
         width: 60%;
+        margin: 20px auto;
       }
       h1 {
         font-size: 1.5rem;
         margin: 5px auto;
-        color: #282938;
+        color: #fff;
       }
       p {
         font-size: 1.2rem;
-        color: #7d7f88;
+        color: #8f7413;
         margin: 5px auto;
       }
     }

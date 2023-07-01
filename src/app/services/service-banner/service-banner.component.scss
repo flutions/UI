@@ -1,0 +1,23 @@
+.s_banner {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  .sb_left {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    h1 {
+      color: #fff;
+      font-size: 3.5rem;
+      width: 70%;
+    }
+  }
+  .sb_right {
+    width: 50%;
+    img {
+      width: 120%;
+      margin-left: -20%;
+    }
+  }
+}

@@ -1,7 +1,6 @@
 .technical {
   width: 80%;
   padding: 10vh 10%;
-  background-color: #fff;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -11,12 +10,17 @@
       font-size: 2rem;
       line-height: 2rem;
       margin: 0 auto 3% auto;
-      font-weight: 600;
+      font-weight: 900;
+      background: #2c4cc4;
+      background: linear-gradient(to right, #2c4cc4 0%, #39a9f9 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
     .tech_desc {
       font-size: 2.5rem;
       line-height: 2.5rem;
       font-weight: 700;
+      color: #fff;
     }
   }
   .technical_right {

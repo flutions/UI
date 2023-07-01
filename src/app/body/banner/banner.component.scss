@@ -1,44 +1,69 @@
 .banner_section {
-  height: 70vh;
+  // height: 70vh;
   width: 80%;
   padding: 20vh 10% 10vh 10%;
-  background-color: #232536;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   .banner_left {
     width: 50%;
+    text-align: center;
+    margin: 10em auto;
     h1 {
-      font-size: 4rem;
-      line-height: 4rem;
+      font-size: 4em;
+      // line-height: 4em;
       color: #fff;
+      span {
+        color: #3f7ecc;
+      }
     }
-    button {
-      padding: 15px 30px;
-      background: #00a5e6;
-      border: none;
-      outline: none;
-      color: #fff;
-      font-size: 1rem;
-      line-height: 1rem;
-      border-radius: 5px;
-      margin: 20px auto;
-    }
-  }
-  .banner_right {
-    width: 50%;
-    max-height: 100%;
-    height: 100%;
-    margin: auto;
-    text-align: right;
-    display: flex;
-    align-items: center;
-    justify-content: end;
-    img {
+    .form {
       width: 80%;
-      max-height: 100%;
-      max-width: 100%;
-      // margin: auto;
+      display: flex;
+      justify-content: center;
+      background-color: #fff;
+      border-radius: 15px;
+      align-items: center;
+      padding: 10px 10px 10px 30px;
+      margin: 5em auto;
+      input {
+        width: 70%;
+        background-color: transparent;
+        border: none;
+        font-size: 1em;
+        outline: none;
+      }
+      button {
+        padding: 1.5em;
+        cursor: pointer;
+        width: 30%;
+        background: #00a5e6;
+        border: none;
+        outline: none;
+        color: #fff;
+        font-size: 1em;
+        line-height: 1em;
+        border-radius: 10px;
+        font-weight: 700;
+      }
     }
   }
+  
+  
+  // .banner_right {
+  //   width: 50%;
+  //   max-height: 100%;
+  //   height: 100%;
+  //   margin: auto;
+  //   text-align: right;
+  //   display: flex;
+  //   align-items: center;
+  //   justify-content: end;
+  //   img {
+  //     width: 80%;
+  //     max-height: 100%;
+  //     max-width: 100%;
+  //     // margin: auto;
+  //   }
+  // }
 }

@@ -13,6 +13,10 @@ body {
   // font-family: Roboto, "Helvetica Neue", sans-serif;
   font-family: "Nunito", myNunitoFont, sans-serif !important;
   overflow-x: hidden;
+  background-color: #0c101b;
+  background-image: url(./assets/Images/spiral.png);
+  background-size: cover;
+  background-repeat: no-repeat;
   p,
   h1,
   h2,
@@ -61,7 +65,7 @@ body {
   display: block;
   float: left;
   font-size: 2em;
-  padding: 10px 20px;
+  padding: 10px 20px 0;
   text-decoration: none;
 }
 
@@ -139,6 +143,14 @@ body {
   top: 0;
 }
 
+@media screen and (max-width: 1340px) {
+  body{
+    font-size: 12px !important;
+  }
+  // .process{
+  //   width: 30% !important;
+  // }
+}
 /* 48em = 768px */
 
 @media (min-width: 999px) {
@@ -168,6 +180,14 @@ body {
       border-left: 5px solid #00a5e6;
     }
   }
+  .process {
+    .process_card {
+      width: 44% !important;
+      p {
+        font-size: 14px !important;
+      }
+    }
+  }
 }
 // Responsive
 @media (max-width: 768px) {
@@ -181,7 +201,11 @@ body {
       width: 100% !important;
     }
   }
-
+  .service {
+    h1 {
+      font-size: 1em !important;
+    }
+  }
   .banner_section {
     flex-direction: column-reverse;
     text-align: center;
@@ -203,8 +227,8 @@ body {
       text-align: center !important;
     }
     h1 {
-      font-size: 2rem !important;
-      line-height: 2rem !important;
+      font-size: 2em !important;
+      line-height: 2em !important;
     }
   }
   .process {
@@ -212,11 +236,11 @@ body {
       .pt_left {
         width: 100% !important;
         .head_top {
-          font-size: 1rem !important;
+          font-size: 1em !important;
         }
         h1 {
-          font-size: 2.5rem !important;
-          line-height: 2.5rem !important;
+          font-size: 2.5em !important;
+          line-height: 2.5em !important;
         }
       }
       .pt_right {
@@ -226,6 +250,20 @@ body {
     .process_bottom {
       .process_card {
         width: 100% !important;
+        margin: 10% auto !important;
+        height: 350px !important;
+        .img_container {
+          img {
+            width: 75px !important;
+          }
+        }
+        &:hover {
+          .img_container {
+            img {
+              width: 50px !important;
+            }
+          }
+        }
       }
     }
   }
@@ -244,11 +282,11 @@ body {
       width: 80% !important;
       margin: 10% 0 0 0 !important;
       h3 {
-        font-size: 1.5rem !important;
+        font-size: 1.5em !important;
       }
       p {
-        font-size: 2rem !important;
-        line-height: 2rem !important;
+        font-size: 2em !important;
+        line-height: 2em !important;
       }
     }
   }
@@ -260,11 +298,11 @@ body {
       width: 80% !important;
       margin: 10% 0 0 0 !important;
       h3 {
-        font-size: 1.5rem !important;
+        font-size: 1.5em !important;
       }
       p {
-        font-size: 2rem !important;
-        line-height: 2rem !important;
+        font-size: 2em !important;
+        line-height: 2em !important;
       }
     }
     .technical_right {
@@ -290,11 +328,11 @@ body {
       width: 80% !important;
       margin: 10% 0 0 0 !important;
       h3 {
-        font-size: 1.5rem !important;
+        font-size: 1.5em !important;
       }
       p {
-        font-size: 2rem !important;
-        line-height: 2rem !important;
+        font-size: 2em !important;
+        line-height: 2em !important;
       }
     }
   }
@@ -303,8 +341,8 @@ body {
     .ex_left {
       width: 100% !important;
       .ex_desc {
-        font-size: 2rem !important;
-        line-height: 2rem !important;
+        font-size: 2em !important;
+        line-height: 2em !important;
         margin: 20px auto !important;
       }
     }
@@ -320,17 +358,17 @@ body {
     .inquiry_left {
       width: 100% !important;
       h1 {
-        font-size: 2.3rem !important;
-        line-height: 2.3rem !important;
+        font-size: 2.3em !important;
+        line-height: 2.3em !important;
       }
     }
     .inquiry_right {
       width: 100% !important;
       h2 {
-        font-size: 1.5rem !important;
+        font-size: 1.5em !important;
       }
       button {
-        font-size: 0.8rem !important;
+        font-size: 0.8em !important;
       }
     }
   }
@@ -338,8 +376,8 @@ body {
     width: 96% !important;
     padding: 10vh 2% !important;
     .team_heading {
-      font-size: 2rem !important;
-      line-height: 2rem !important;
+      font-size: 2em !important;
+      line-height: 2em !important;
     }
     .team_cards {
       .card {
@@ -347,11 +385,11 @@ body {
         margin: 10px !important;
         width: 30% !important;
         h1 {
-          font-size: 0.8rem !important;
+          font-size: 0.8em !important;
           margin: 2px auto !important;
         }
         p {
-          font-size: 0.6rem !important;
+          font-size: 0.6em !important;
           margin: 2px auto !important;
         }
       }
@@ -364,12 +402,12 @@ body {
     .contact_left {
       width: 100% !important;
       h1 {
-        font-size: 2rem !important;
-        line-height: 2rem !important;
+        font-size: 2em !important;
+        line-height: 2em !important;
       }
       p {
-        font-size: 1rem !important;
-        line-height: 1rem !important;
+        font-size: 1em !important;
+        line-height: 1em !important;
       }
       a {
         margin: 0 !important;
@@ -381,7 +419,7 @@ body {
       .cr_top {
         justify-content: space-between !important;
         .cr_top_links {
-          font-size: 0.8rem !important;
+          font-size: 0.8em !important;
         }
       }
       .cr_bottom {
@@ -397,10 +435,73 @@ body {
       width: 40px !important;
     }
     p {
-      font-size: 0.8rem !important;
+      font-size: 0.8em !important;
     }
     svg {
       width: 15px !important;
     }
   }
+}
+
+//  Media Query //
+
+@media screen and (max-width: 540px) {
+  .s_banner .sb_left h1
+   {
+    font-size: 1.5rem !important;
+    width: 74% !important;
+   }
+   .faq .heading {
+    font-size: 2.5rem !important; 
+}
+.main{
+  width: 85% !important;
+}
+}
+@media screen and (max-width: 414px) {
+  .development .development_left img {
+    width: 66% !important;
+  }
+    .consulting .consulting_left img {
+      width: 60% !important;
+}
+.technical .technical_right img {
+  width: 66% !important;
+}
+}
+@media  screen and(max-width: 412px) {
+  .s_banner .sb_left h1
+   {
+    font-size: 1.5rem !important;
+    width: 74% !important;
+   }
+   .faq .heading {
+    font-size: 2.5rem !important; 
+}
+.inquiry {
+  height: 306px !important;
+}
+}
+@media screen and (max-width: 400px) {
+  .btn_req {
+    width: 30% !important
+  }
+}
+@media screen and (max-width: 390px) {
+  body{
+    font-size: 6px !important;
+  }
+  // .btn_req {
+  //   width: 34% !important;
+  // }
+  // .banner_section{
+  //   .form{
+  //     padding: 10px 10px 10px 6px !important;
+  //   width: 88% !important;
+  //   input{
+  //     font-size: 1em !important;
+
+  //   }
+  //   }
+  // }
 }

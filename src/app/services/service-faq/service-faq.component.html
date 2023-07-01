@@ -1,0 +1,30 @@
+<div class="faq">
+  <h1 class="heading">FREQUENTLY ASKED QUESTIONS</h1>
+  <div class="faq_body">
+    <div class="faq_left">
+      <h1>Frequently asked questions</h1>
+    </div>
+    <div class="faq_right">
+      <div class="tab" *ngFor="let data of faq; let i = index">
+        <div
+          class="tab_data"
+          (click)="current == i ? (current = -1) : (current = i)"
+        >
+          <div class="tab_left">
+            <h3>{{ i < 10 ? "0" + (i + 1) : i + 1 }}</h3>
+          </div>
+          <div class="tab_right">
+            <h3>
+              {{ data.q }}
+            </h3>
+            <h3>
+              <mat-icon>{{ current == i ? "close" : "add" }}</mat-icon>
+            </h3>
+          </div>
+        </div>
+        <!-- <h1 class="hidden">00</h1> -->
+        <p *ngIf="current == i">{{ data.a }}</p>
+      </div>
+    </div>
+  </div>
+</div>
